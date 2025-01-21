@@ -1,0 +1,52 @@
+HELP.md
+
+# Maven/Gradle 빌드 파일
+/target/
+*.jar
+*.war
+
+/build/
+.gradle/
+!gradle-wrapper.jar
+
+# IDE 설정 파일
+/.idea/
+/*.iml
+*.log
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OS별 파일
+*.class
+*.swp
+*.swo
+*.DS_Store
+*.log
+
+# IntelliJ
+/.idea/
+/*.iml
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Logs
+*.log
+logs/
+
+# Spring Boot 설정
+/spring-boot-starter-*.*
+*logback-test.xml
