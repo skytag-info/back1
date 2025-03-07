@@ -1,0 +1,35 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: api-server
+
+logging:
+  level:
+    feign: DEBUG
+    org:
+      springframework:
+        web: DEBUG
+      mybatis: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+icn:
+  api:
+    service:
+      key: hkxBl6ynUdcthsxIn%2F2Tn%2BC6xZ522M6oUYja2%2Fhfeb9siulqy5loLw9WkEUBQ7GiQKCBVGxLg77gBLj7T6mGhA%3D%3D
+  client:
+    url: apis.data.go.kr/B551177/statusOfAllFltDeOdp
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:/mapper/*.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
